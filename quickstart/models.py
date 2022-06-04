@@ -17,3 +17,12 @@ class SutdentDemo(models.Model):
     age=models.IntegerField
     fees=models.IntegerField
     qualification=models.CharField(max_length=20)
+
+
+class Employee(models.Model):
+    
+    name=models.TextField()
+    gender=models.TextField(default='M')
+    address=models.TextField(default='India')
+    age=models.TextField()
+    salary=models.TextField()
